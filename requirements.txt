@@ -1,0 +1,10 @@
+ollama
+sentence-transformers
+sqlite-vec
+pypdf
+python-docx
+numpy
+psutil
+# torch installed separately via CPU-only index — see README
+
+requests  # bounded official documentation downloads (connection reuse)

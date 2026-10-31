@@ -1,0 +1,23 @@
+# Local environments and caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+*.log
+
+# Private local documents, query history, preferences and vector indexes
+data/
+knowledge_base/
+knowledge_base_kali/
+CONTEXT.md
+
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/
+.idea/
