@@ -10,6 +10,12 @@ The demo component is called BeaconDesk. BeaconDesk groups simulated device obse
 
 Each observation has a device label and an event category. Repeated observations with the same device label and category are grouped into one event. A category change creates a separate event.
 
+## Example command option
+
+The fictional BeaconDesk CLI documents this option.
+
+--group-events: Group observations that share a device label and event category.
+
 ## Limits
 
 This document specifies no radio hardware, security guarantee, measured latency, temperature range, battery lifetime, or deployment result. Those facts are unknown.

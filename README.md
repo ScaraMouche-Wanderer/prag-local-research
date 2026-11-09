@@ -5,7 +5,31 @@ PRAG is a local-first retrieval-augmented research engine. It searches a local d
 
 **Python · Ollama · SQLite-vec · sentence-transformers · CLI + streaming web interface**
 
-[Project brief](PROJECT_BRIEF.md) · [Presentation](DEPLOYMENT.md) · [Contributing](CONTRIBUTING.md)
+**[Try the evidence walkthrough](#try-it-without-a-model)** · [Run with Ollama](#quick-start) · [Project brief](PROJECT_BRIEF.md) · [Contributing](CONTRIBUTING.md)
+
+## Try it without a model
+
+Run the evidence walkthrough from a fresh checkout using only the lightweight
+Python client. The walkthrough uses the same answer functions as PRAG and
+supplies excerpts directly from a synthetic document. It shows an exact option
+definition with a citation, followed by `UNKNOWN` when no excerpt is available.
+
+> **What does `--group-events` do?** Group observations that share a device
+> label and event category [1]. The cited excerpt comes from the
+> [BeaconDesk sample document](examples/demo-corpus/overview.md).
+
+```bash
+git clone https://github.com/ScaraMouche-Wanderer/prag-local-research.git
+cd prag-local-research
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install ollama
+python -m examples.evidence_walkthrough
+deactivate
+```
+
+The walkthrough runs without an Ollama server, model weights, or an index.
+Use the full quick start below to search your own documents.
 
 ## Why build it?
 
